@@ -59,9 +59,9 @@ def flaskfunc_lt() -> 'html':
                                the_results=results,)
 
 @app.route('/')    
-@app.route('/entry',methods=['GET'])
+@app.route('/Index',methods=['GET'])
 def flaskfunc_html_rt() -> 'html':
-        return render_template('entry.html',the_title='entry title ex.')
+        return render_template('Index.html',the_title='entry title ex.')
         
 @app.route('/viewlog')
 @check_logged_in
